@@ -23,7 +23,7 @@ body {}
     display: flex;
     flex-flow: row nowrap; gap: 20px;
 }
-#wrap header nav #gnb a:hover {color:#c77f7f !important;}/* 공통 a, !important : 우선순위를 높여줌 */
+#wrap header nav #gnb a:hover {color:#c0dfee !important;}/* 공통 a, !important : 우선순위를 높여줌 */
 #wrap header nav #gnb > li {position: relative;}/* 첫번째 서브(gnb depth2) 기준 */
 #wrap header nav #gnb > li:hover .gnb_depth2 {display: block;}
 #wrap header nav #gnb > li > a {
@@ -31,7 +31,7 @@ body {}
     line-height: 70px; display: block;
 }/* line 20 */
 #wrap header nav #gnb > li > .gnb_depth2 {
-    background-color: #500c0c;
+    background-color: #27536B;
     position: absolute;
     width: 160px;
     left: 50%; transform: translateX(-50%);/* absolute 부모 x축 정중앙 */
@@ -45,7 +45,7 @@ body {}
     display: block; line-height: 46px;
 }
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 {
-    background-color: #642323;
+    background-color: #3c6f8a;
     display: none;
 }
 #wrap header nav #gnb > li > .gnb_depth2 > li > .gnb_depth3 li {}
