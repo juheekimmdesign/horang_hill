@@ -37,6 +37,7 @@
 }
 #wrap main #hero_bnr #reservation_form h2+div,
 #wrap main #hero_bnr #reservation_form ul li {
+    background-color: lime;
 }
 /* --------------------------------------------------------------- 객실선택 */
 #wrap main #hero_bnr #reservation_form .room {}
@@ -165,6 +166,74 @@
     border-radius: 8px;
     font-size: 0.88rem;
 }
+/* -------------------------------------------------소개, 관광지 통합 */
+#wrap main .info .info_contents h1,
+#wrap main .info .info_contents p,
+#wrap main .tour h1,
+#wrap main .tour > p {margin-bottom: 30px;}
+#wrap main .info .info_contents h1,
+#wrap main .tour h1 {
+    font-size: 1.50rem;
+    font-weight: 600;
+}
+#wrap main .info .info_contents p,
+#wrap main .tour > p {
+    line-height: 1.7;
+    font-size: 0.94rem;
+    color: #555;
+}
+/* ------------------------------------------------게스트하우스 소개 */
+#wrap main .info {
+    background-color: #F5F5F5;
+    padding: 70px 0;
+}
+#wrap main .info .info_contents {
+    width: 1220px;
+    margin: 0 auto;
+}
+#wrap main .info .info_contents img {}
+/* ---------------------------------------------------------관광지 */
+#wrap main .tour {
+    width: 1220px;
+    margin: 70px auto;
+}
+#wrap main .tour .tour_list {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap main .tour .tour_list li {
+    width: calc((100% - (20px * 3)) / 4);
+}
+#wrap main .tour .tour_list li a {}
+#wrap main .tour .tour_list li a p {
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#wrap main .tour .tour_list li a p img{
+    
+}
+#wrap main .tour .tour_list li a img:hover {width: 200%;}
+#wrap main .tour .tour_list li a p {
+    
+}
+/* hover 시 이미지 확대 방법2 */
+/* #wrap main .tour .tour_list li a .traval:hover {background-size: 150%; background-position: 50% 50%;}
+#wrap main .tour .tour_list li a .traval {height: 250px;}
+#wrap main .tour .tour_list li a .traval1 {background-image: url(../images/traval1.jpg);}
+#wrap main .tour .tour_list li a .traval2 {background-image: url(../images/traval2.jpg);}
+#wrap main .tour .tour_list li a .traval3 {background-image: url(../images/traval3.jpg);}
+#wrap main .tour .tour_list li a .traval4 {background-image: url(../images/traval4.jpg);} */
+#wrap main .tour .tour_list li a p {
+    font-size: 1.13rem; font-weight: 600;
+}
+#wrap main .tour .more {
+    display: block;
+    text-align: center;
+    padding-top: 70px;
+    text-decoration: underline;
+    font-size: 0.94rem;
+}
 /* ===================================================================2.양림동 호랑가시나무 소개 */
 #wrap main #intro_guest_bg {
     background-color: #F5F5F5;
@@ -211,65 +280,4 @@
     border-bottom: 1px solid #000 ;
     padding-bottom: 4px;
     /* text-decoration: underline; 밑줄과 글자사이 여백 불가능 */
-}
-/* ===================================================================================== 4.객실 및 예약 안내 */
-#wrap main #intro_roominfo_bg {background-color: #F5F5F5;}
-#wrap main #intro_roominfo_bg #intro_roominfo {}
-#wrap main #intro_roominfo_bg #intro_roominfo h1 {}
-#wrap main #intro_roominfo_bg #intro_roominfo p {}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between; align-items: center;
-    margin: 0 0 50px;/* ul + a 여백 */
-}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li {}
-/* #wrap main #intro_roominfo_bg #intro_roominfo .contents li a {border: 1px solid rebeccapurple;} 크기 테스트 */
-/* 크기가 다른 이미지 개별 클래스 선택으로 hover 시 세로 비율 유지*/
-#wrap main #intro_roominfo_bg #intro_roominfo .contents .big_layout a {
-    margin: 0 0 10px;
-    display: block;
-    overflow: hidden;
-    height: 350px;
-}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents .small_layout a {
-    margin: 0 0 10px;
-    display: block;
-    overflow: hidden;
-    height: 250px;
-}
-/* room 이미지에 hover 시 변경 되는 비율 100% -> 120% */
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li a img {width: 100%;}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li:hover a img {width: 120%;}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li h2 {
-    font-size: 1.13rem; font-weight: 600;
-}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li:first-child h2 {margin: 0 0 10px;}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents li p {
-    font-size: 0.88rem; line-height: 1.7; color: #555;
-}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents .big_layout {width: 500px;}
-#wrap main #intro_roominfo_bg #intro_roominfo .contents .small_layout {width: calc((100% - 500px - 60px) / 3);}
-#wrap main #intro_roominfo_bg #intro_roominfo .reservation {
-    margin: 0 auto;
-    width: max-content;
-    display: block;
-    border-bottom: 1px solid #000 ;
-    padding-bottom: 4px;
-}
-/* ======================================================================== 5.게스트하우스 찾아오시는 길 */
-#wrap main #intro_visitmap {}
-#wrap main #intro_visitmap .title {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between; align-items: center;
-}
-#wrap main #intro_visitmap .title h2 {}
-#wrap main #intro_visitmap .title p {}
-#wrap main #intro_visitmap .map {margin: 0 0 30px; display: block;}
-#wrap main #intro_visitmap .map img {width: 100%;}
-#wrap main #intro_visitmap .contents dt {
-    font-size: 1.50rem; font-weight: 700; line-height: 1.8; color: #555;
-}
-#wrap main #intro_visitmap .contents dd {
-    font-size: 0.94rem; line-height: 1.8;
-    margin: 0 0 30px; color: #555;
 }

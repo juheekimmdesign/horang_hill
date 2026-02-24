@@ -54,8 +54,15 @@ body {}
     display: block; line-height: 46px;
 }
 /* ==================================================== foother */
-#warp footer {}
-#warp footer p {}
+footer {background-color: #000;}
+footer #footer_wrap {}
+footer #footer_wrap p,
+footer #footer_wrap p a {
+    display: inline-block;
+    color: #fff;
+    line-height: 2.0;
+    font-size: 0.81rem;
+}
 /* ==================================================== main w1220+p70 */
 /* main > div */
 /* main #intro_tourist, main... */
