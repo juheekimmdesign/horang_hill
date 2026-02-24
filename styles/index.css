@@ -234,3 +234,50 @@
     text-decoration: underline;
     font-size: 0.94rem;
 }
+/* ===================================================================2.양림동 호랑가시나무 소개 */
+#wrap main #intro_guest_bg {
+    background-color: #F5F5F5;
+}
+#wrap main #intro_guest_bg #intro_guest {}
+#wrap main #intro_guest_bg #intro_guest h1 {}
+#wrap main #intro_guest_bg #intro_guest p {}/* 공통(개별 먼저 처리하고, 공통작업하기) */
+#wrap main #intro_guest_bg #intro_guest h1+p {}
+#wrap main #intro_guest_bg #intro_guest p:last-child {}
+#wrap main #intro_guest_bg #intro_guest p:last-child img {width: 100%;}/* (작은 img, 아이콘이 아닌) 배너, 이미지는 너비 100%로 미리 준비하는 좋은 습관! */
+/* =========================================================================== 3. 관광지 소개 */
+#wrap main #intro_tourist {}
+#wrap main #intro_tourist h1 {}
+#wrap main #intro_tourist p {}
+#wrap main #intro_tourist .contents {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 0 50px;/* ul + a 여백 */
+}
+#wrap main #intro_tourist .contents li {
+    width: calc((100% - 60px) / 4);
+    /* width: calc((100% - (20px * 3)) / 4); */
+}
+#wrap main #intro_tourist .contents li a {
+    display: block;
+    margin: 0 0 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+#wrap main #intro_tourist .contents li a img {width: 100%;}
+#wrap main #intro_tourist .contents li a:hover img {width: 120%; position: absolute; left: 50%; transform: translateX(-50%);}
+/* #wrap main #intro_tourist .contents li:first-child a img {width: 120%;} 이미지 테스트용 */
+#wrap main #intro_tourist .contents li a:hover img {}
+#wrap main #intro_tourist .contents li h2 {
+    font-size: 1.13rem; font-weight: 600;
+}
+#wrap main #intro_tourist .more {
+    /* 화면의 가운데로 보내기 text_aline : 부모한테 명령  -> 자식, 자손 인라인 적용 */
+    /* 대상이 block 일 때 가장 안정적 */
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: 1px solid #000 ;
+    padding-bottom: 4px;
+    /* text-decoration: underline; 밑줄과 글자사이 여백 불가능 */
+}
