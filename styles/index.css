@@ -197,7 +197,6 @@
 }
 #wrap main #intro_tourist .contents li a img {
     width:100%;
-    transform-origin: center;
     transition: transform 0.5s; 
     }
 #wrap main #intro_tourist .contents li a:hover img {transform: scale(1.2)}
@@ -244,7 +243,6 @@
 /* room 이미지에 hover 시 변경 되는 비율 100% -> 120% */
 #wrap main #intro_roominfo_bg #intro_roominfo .contents li a img {
     width:100%;
-    transform-origin: center;
     transition: transform 0.5s;
 }
 #wrap main #intro_roominfo_bg #intro_roominfo .contents li:hover a img {transform: scale(1.2)}

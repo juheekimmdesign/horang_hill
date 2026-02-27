@@ -56,8 +56,8 @@ body {}
 /* ==================================================== foother */
 footer {background-color: #000;}
 footer #footer_wrap {}
-footer #footer_wrap p,
-footer #footer_wrap p a {
+footer #footer_wrap address,
+footer #footer_wrap address a {
     display: inline-block;
     color: #fff;
     line-height: 2.0;
